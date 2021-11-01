@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>webプロ演習課題3</title>
+  </head>
+  <link href="styles/style.css" rel="stylesheet">
+  <body>
+    <header>
+      <h1>演習課題3</h1>
+    </header>
+  　
+    <main>
+      <article>
+      <p>この記事では、HTMLの数ある要素のうち、基本的な3種類の要素を紹介します。</p>
+        <h2 id="list">リスト</h2>
+        <p>リストは&lt;ul&gt;&lt;/ul&gt;タグ,もしくは&lt;ol&gt;&lt;/ol&gt;用いて実装します。<br>
+        &lt;ul&gt;タグは順序なしのリスト、&lt;ol&gt;タグは順序ありのリストです。<br>
+        &lt;ul&gt;、もしくは&lt;ol&gt;要素でリストを囲み、箇条書きしたい項目を&lt;li&gt;タグで囲むことで追加できます。
+        ここでは、&lt;ul&gt;タグを用いてリストを作成してみました。
+        コードは以下の通りです。</p>
+        <pre><code>
+          &lt;ul&gt; 
+            &lt;li&gt;あいうえお&lt;/li&gt;
+            &lt;li&gt;かきくけこ&lt;/li&gt;
+            &lt;li&gt;さしすせそ&lt;/li&gt;
+          &lt;/ui&gt;
+        </pre></cpde>
+      
+        <p>実行結果は以下の通りです。</p>
+        <ul class = "listex1"> 
+          <li>あいうえお</li>
+          <li>かきくけこ</li>
+          <li>さしすせそ</li>
+        </ul>
+
+        <p>リストの点を変更することもできます。例えば、</p>
+        <pre><code>
+          ul {
+            list-style-type: circle;
+          }
+        </pre></cpde>
+        <p>として、黒丸を白丸に変更してみました。以下のようになります。</p>
+        <ul class = "listex2">
+          <li>リスト1</li>
+          <li>リスト2</li>
+          <li>リスト3</li>
+        </ul>
+        <p>&lt;ol&gt;タグを用いた順序付きリストも同様に作成できます。ここでは例は省略。</p>
+        <h2 id="table">表</h2>
+        <p>&lt;table&gt;タグを用いて表を作成できます。&lt;th&gt;,&lt;tr&gt;,&lt;td&gt;要素を用いて作ります。<br></p>
+        
+        <p>コードは以下の通りです。</p>
+        <pre><code>
+          &lt;table&gt;
+          &lt;tr&gt;
+            &lt;th&gt;タグ&lt;/th&gt;
+            &lt;th&gt;説明&lt;/th&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;tr&gt;&lt;/td&gt;
+            &lt;td&gt;表の行を囲む。
+            &lt;strong&gt;t&lt;/strong&gt;able &lt;strong&gt;r&lt;/strong&gt;ow の略。
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;tr&gt;&lt;/td&gt;
+            &lt;td&gt;
+            表の見出しとなるセルを作成する。
+            &lt;strong&gt;t&lt;/strong&gt;able &lt;strong&gt;h&lt;/strong&gt;eader の略。
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&lt;tr&gt;&lt;/td&gt;
+            &lt;td&gt;
+            表のデータとなるセルを作成する。
+            &lt;strong&gt;t&lt;/strong&gt;able &lt;strong&gt;d&lt;/strong&gt;eta の略。
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+        </pre></cpde>
+        <p>完成した表がこちらです。この表で各タグについて説明します。</p>
+        <table>
+          <tr>
+            <th>タグ</th>
+            <th>説明</th>
+          </tr>
+          <tr>
+            <td>&lt;tr&gt;</td>
+            <td>表の行を囲む。<strong>t</strong>able <strong>r</strong>ow の略。</td>
+          </tr>
+          <tr>
+            <td>&lt;th&gt;</td>
+            <td>表の見出しとなるセルを作成する。<strong>t</strong>able <strong>h</strong>eader の略。</td>
+          </tr>
+          <tr>
+            <td>&lt;td&gt;</td>
+            <td>表のデータとなるセルを作成する。<strong>t</strong>able <strong>d</strong>ata の略。</td>
+          </tr>
+        </table>
+        <h2 id="no3">画像</h2>
+        <p>最後は画像の挿入について学びましょう。画像を表示するには&lt;img&gt;タグを使用します。コードは以下のように書きます。</p>
+        <pre><code>
+          &lt;img <strong>src</strong> = "images/sunflower.jpg" <strong>alt</strong> = "ひまわり"&gt;
+        </pre></cpde>
+        <p>src属性は場所を設定する属性です。ここでは、画像ファイルがある場所を指定しています。src属性にファイルのパスを書き込むことで画像が表示できるという仕組みになっています。
+        次に、コードの末尾についている&lt;alt&gt;タグに注目してください。これは、もし何らかの問題でブラウザで画像を読み込めなかった場合に、画像の代わりに表示するテキストです。
+          また、テキストは表示されていない画像がどんな画像なのかを書くべきです。
+          実行結果はこちらです。</p>
+          <img src = "images/sunflower.jpg" alt = "ひまわり">
+        <h2 id="no4">まとめ</h2>
+        <p>以上、基本的は３つのHTML要素を紹介しました。しかし、HTML要素はまだまだ沢山あります。もっともっと学んでより素晴らしいWebページを作成しましょう！
+      </article>
+    </main>
+    <footer>日本大学文理学部情報科学科　5420034 四ツ目蒼太</footer>
+  </body>
+</html>

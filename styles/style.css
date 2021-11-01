@@ -1,0 +1,105 @@
+html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  
+}
+h2 {
+  font-size: 30px;
+  padding-left: 5px;
+  border-bottom: 3px dotted orange;
+  border-left: 5px  solid orange;
+}
+p, li {
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+.listex2{
+  list-style-type: circle;
+}
+
+header {
+  width: 100%;
+  height: 8vh;
+  background-color: beige;
+}
+footer {
+  padding-top: 5px;
+  text-align: center;
+  width: 100%;
+  height: 5vh;
+  background-color: beige;
+}
+pre,code {
+  background-color:white;
+  font-size: 20px;
+  text-align: left;
+}
+pre {
+  width: 100%;
+  height: fit-content;
+  padding: 1px;
+  border-left: 5px solid orange;
+}
+
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-color: rgb(252, 240, 195);
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  width: 800px;
+}
+
+
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: black;
+  font-family: sans-serif;
+}
+span {
+  color: red;
+  font-size: large;
+}
+article {
+  width: auto;
+}
+
+table,th,td {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+th {
+  text-align: center;
+  background-color:orange;
+}
+td {
+  background-color: white;
+}
+strong {
+  color: red;
+}
+
+img {
+  width: auto;
+  height: auto;
+}
